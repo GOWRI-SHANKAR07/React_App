@@ -5,6 +5,7 @@ import MyContext from '../../Hooks/useContext';
 function ComponentA() {
   // Consume the context value using useContext
   const contextData = useContext(MyContext);
+  console.log(contextData.message);
 
   return (
     <div>

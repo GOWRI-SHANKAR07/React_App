@@ -7,6 +7,8 @@ import UseMemo from '../Hooks/useMemo';
 import UseRef from '../Hooks/useRef';
 import UseReducer from '../Hooks/useReducer';
 import Custom_Hook from '../screens/Custom_Hook';
+import Context from './components/Context';
+import UnMount from '../Hooks/unMount';
 
 function App() {
   // Define the data you want to share in the context
@@ -15,9 +17,7 @@ function App() {
   };
 
   return (
-    <MyContext.Provider value={sharedData}>
-      <ComponentA />
-    </MyContext.Provider>
+    <UnMount />
   );
 }
 
